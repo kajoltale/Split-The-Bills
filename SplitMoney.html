@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SplitMoney</title>
+  <link rel = "stylesheet" type = "text/css" href = "style.css" media = "screen" />
+</head>
+<body>
+  <div id = "container">
+  <h1>Split The Bill</h1>
+  <div id = "calculator">
+    <form>
+      <p>Amount: &nbsp;<input id = "billamt" type = "text" placeholder = "Amount">
+
+        <p>Discription: &nbsp<input id = "discription" type = "text" placeholder = "Discription">
+
+          <p>Select Currency: 
+            <p>
+              <select id = "serviceQual" onkeypress = "displayCurrency()">
+            <option disabled selected value = "0">-- Choose an Option --</option>
+            <option value = "&#0036">&#0036 - Dollar</option>
+            <option value = "&#8364;">&#8364; - Euro</option>
+            <option value = "&#8377;">&#8377; - Indian Rupee</option>
+            <option value = "&#165;">&#165; - Yen</option>
+            <option value = "&#163; ">&#163; - Pound</option>
+        </select>
+
+    </form>
+    <p>Number of people: </p>
+    <input id = "peopleamt" type = "text" placeholder = "Number of People">
+    <button type = "button" id = "calculate">Calculate</button>
+
+  </div>
+  <div id = "billPerPerson">
+    You have to pay: 
+    <b id = "currency">Currency</b>
+    <span id = "bill">0.00</span>
+    <small id = "each">each</small>
+  </div>
+
+</div>
+
+<script type = "text/javascript" src = "SplitMoney.js"></script>
+
+</body>
+</html>
